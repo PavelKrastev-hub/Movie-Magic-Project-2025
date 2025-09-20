@@ -3,8 +3,10 @@ SoftUni Movie-Magic JS-Project
 
 ## Development steps
 
--- Initialize project
--- Add express server
--- Add workshop resources
--- Setup handlebars
+[x] Initialize project
+[x] Add express server
+[x] Config debugging
+[x] Add workshop resources
+[x] Setup handlebars
+-- Setup static files
 -- Render home page
