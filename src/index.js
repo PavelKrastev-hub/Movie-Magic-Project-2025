@@ -21,6 +21,8 @@ app.use(express.static("src/public"));
 app.get("/", (req, res) => {
   res.render("home");
 });
+app.get('/about', (req, res)=> {
+  res.render('about')
 });
 
 // Start server
