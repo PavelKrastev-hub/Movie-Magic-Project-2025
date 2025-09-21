@@ -14,7 +14,7 @@ SoftUni Movie-Magic JS-Project
 - [x] Render about page
 ---
 ### Architecture and dynamic rendering
-- [ ] Add home cotroller
+- [x] Add home cotroller
 - [ ] Add movie data layer
 - [ ] Add movie service
 - [ ] Render movies on home page
