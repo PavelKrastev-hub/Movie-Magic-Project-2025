@@ -61,12 +61,12 @@ SoftUni Movie-Magic JS-Project
   - [x] By year
   - [x] By genre
   - [x] By title
-- [ ] Remember search words
+- [x] Remember search words
 
 ---
 
 ### Bonuses
 
-- [ ] Dynamic page title
+- [x] Dynamic page title
 - [ ] File persistance
 - [ ] Rating
