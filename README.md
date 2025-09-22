@@ -31,7 +31,7 @@ SoftUni Movie-Magic JS-Project
 - [x] Create movie controller
 - [x] Show create movie page
 - [x] Add routes
-- [ ] Add 404 page
+- [x] Add 404 page
 - [x] Read body data
 - [x ] Create movie
   - [x] Add action
@@ -44,7 +44,7 @@ SoftUni Movie-Magic JS-Project
 
 ### Details page
 
-- [ ] Add navigation button for details page
+- [x] Add navigation button for details page
 - [ ] Add route with param for details page
 - [ ] Get one movie from service
 - [ ] Find movie by id from model
