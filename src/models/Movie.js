@@ -11,7 +11,7 @@ export const movies = [
       "https://m.media-amazon.com/images/I/51r1lzFTpFL._UF894,1000_QL80_.jpg",
     director: "Frank Darabont",
     year: '1994',
-    rating: 9.3,
+    rating: 7.3,
     category: "Classic",
   },
   {
