@@ -2,7 +2,6 @@ import express from "express";
 import handlebars from "express-handlebars";
 import routes from "./routes.js";
 
-
 const app = express();
 
 // Setup handlebars
@@ -20,7 +19,7 @@ app.set("views", "src/views");
 app.use(express.static("src/public"));
 
 // Parse form data from request
-app.use(express.urlencoded()); 
+app.use(express.urlencoded());
 
 //Routes
 app.use(routes);
