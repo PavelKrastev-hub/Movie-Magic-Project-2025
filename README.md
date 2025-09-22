@@ -45,10 +45,10 @@ SoftUni Movie-Magic JS-Project
 ### Details page
 
 - [x] Add navigation button for details page
-- [ ] Add route with param for details page
-- [ ] Get one movie from service
-- [ ] Find movie by id from model
-- [ ] Render details page with dynamic data
+- [x] Add route with param for details page
+- [x] Get one movie from service
+- [x] Find movie by id from model
+- [x] Render details page with dynamic data
 
 ---
 

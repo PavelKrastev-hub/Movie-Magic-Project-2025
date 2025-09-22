@@ -1,4 +1,4 @@
-import { v4 as uuid } from 'uuid'
+import { v4 as uuid } from "uuid";
 
 export const movies = [
   {
@@ -78,19 +78,19 @@ export default class Movie {
     let result = movies.slice();
 
     if (filter._id) {
-      result = movies.filter(movie => movie.id === filter._id);
+      result = movies.filter((movie) => movie._id === filter._id);
     }
 
-    return movies.slice();
+    return result;
   }
 
   static findOne(filter = {}) {
     let result = movies[0];
 
     if (filter._id) {
-      result = movies.find(movie => movie.id === filter._id);
+      result = movies.find((movie) => movie._id === filter._id);
     }
-    
+
     return result;
   }
 
@@ -101,6 +101,6 @@ export default class Movie {
   save() {
     movies.push(this);
 
-    return this
+    return this;
   }
 }
