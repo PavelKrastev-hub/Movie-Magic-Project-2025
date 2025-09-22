@@ -38,7 +38,7 @@ SoftUni Movie-Magic JS-Project
   - [x] Add service
   - [x] add model method for creating movie
 - [x] Redirect after creation
-- [ ] Add unique id for each created movie
+- [x] Add unique id for each created movie
 
 ---
 
