@@ -69,4 +69,4 @@ SoftUni Movie-Magic JS-Project
 
 - [x] Dynamic page title
 - [ ] File persistance
-- [ ] Rating
+- [x] Rating

@@ -6,12 +6,14 @@ export default {
    },
 
    getOne(movieId) {
-      return Movie.findOne({_id: movieId});
+      return Movie.findOne({ _id: movieId });
    },
 
-  create(movieData) {
-    const movie = new Movie(movieData);
+   create(movieData) {
+      movieData.rating = Number(movieData.rating);
 
-    return movie.save(); 
-  }
+      const movie = new Movie(movieData);
+
+      return movie.save();
+   }
 }
