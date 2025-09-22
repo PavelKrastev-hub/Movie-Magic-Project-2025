@@ -1,6 +1,7 @@
 import express from "express";
 import handlebars from "express-handlebars";
 import homeController from './controllers/homeController.js'
+import movieController from "./controllers/createMovie.js";
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(express.static("src/public"));
 
 //Routes
 app.use(homeController);
+app.use('/movies', movieController);
 
 // Start server
 app.listen(5500, () =>
