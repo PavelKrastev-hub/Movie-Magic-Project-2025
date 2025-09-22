@@ -28,11 +28,11 @@ SoftUni Movie-Magic JS-Project
 
 ### Create movie
 
-- [ ] Create movie controller
-- [ ] Show create movie page
-- [ ] Add routes
+- [x] Create movie controller
+- [x] Show create movie page
+- [x] Add routes
 - [ ] Add 404 page
-- [ ] Read body data
+- [x] Read body data
 - [ ] Create movie
   - [ ] Add action
   - [ ] Add service
