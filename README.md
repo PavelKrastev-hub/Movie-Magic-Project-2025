@@ -34,7 +34,7 @@ SoftUni Movie-Magic JS-Project
 - [ ] Add 404 page
 - [x] Read body data
 - [ ] Create movie
-  - [ ] Add action
+  - [x] Add action
   - [ ] Add service
   - [ ] add model method for creating movie
 - [ ] Redirect after creation
