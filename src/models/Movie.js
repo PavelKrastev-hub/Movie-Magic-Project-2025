@@ -10,7 +10,7 @@ export const movies = [
     imageUrl:
       "https://m.media-amazon.com/images/I/51r1lzFTpFL._UF894,1000_QL80_.jpg",
     director: "Frank Darabont",
-    year: 1994,
+    year: '1994',
     rating: 9.3,
     category: "Classic",
   },
@@ -23,7 +23,7 @@ export const movies = [
     imageUrl:
       "https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     director: "Francis Ford Coppola",
-    year: 1972,
+    year: '1972',
     rating: 9.2,
     category: "Classic",
   },
@@ -36,7 +36,7 @@ export const movies = [
     imageUrl:
       "https://m.media-amazon.com/images/M/MV5BZjhkNjM0ZTMtNGM5MC00ZTQ3LTk3YmYtZTkzYzdiNWE0ZTA2XkEyXkFqcGc@._V1_.jpg",
     director: "Christopher Nolan",
-    year: 2010,
+    year: '2010',
     rating: 8.8,
     category: "Blockbuster",
   },
@@ -49,7 +49,7 @@ export const movies = [
     imageUrl:
       "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg",
     director: "Christopher Nolan",
-    year: 2008,
+    year: '2008',
     rating: 9.0,
     category: "Superhero",
   },
@@ -61,7 +61,7 @@ export const movies = [
       "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in tales of violence and redemption.",
     imageUrl: "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SL1188_.jpg",
     director: "Quentin Tarantino",
-    year: 1994,
+    year: '1994',
     rating: 8.9,
     category: "Cult Classic",
   },
@@ -78,7 +78,19 @@ export default class Movie {
     let result = movies.slice();
 
     if (filter._id) {
-      result = movies.filter((movie) => movie._id === filter._id);
+      result = movies.filter(movie => movie._id === filter._id);
+    }
+
+    if (filter.title) {
+      result = movies.filter(movie => movie.title.toLowerCase().includes(filter.title.toLowerCase()));
+    }
+
+    if (filter.genre) {
+      result = movies.filter(movie => movie.genre.toLowerCase() === filter.genre.toLowerCase());
+    }
+
+    if (filter.year) {
+      result = movies.filter(movie => movie.year === filter.year);
     }
 
     return result;
