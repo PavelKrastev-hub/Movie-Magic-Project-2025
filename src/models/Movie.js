@@ -1,6 +1,8 @@
+import { v4 as uuid } from 'uuid'
+
 export const movies = [
   {
-    id: "550e8400-e29b-41d4-a716-446655440000",
+    _id: "550e8400-e29b-41d4-a716-446655440000",
     title: "The Shawshank Redemption",
     genre: "Drama",
     description:
@@ -13,7 +15,7 @@ export const movies = [
     category: "Classic",
   },
   {
-    id: "6fa459ea-ee8a-3ca4-894e-db77e160355e",
+    _id: "6fa459ea-ee8a-3ca4-894e-db77e160355e",
     title: "The Godfather",
     genre: "Crime",
     description:
@@ -26,11 +28,11 @@ export const movies = [
     category: "Classic",
   },
   {
-    id: "7c9e6679-7425-40de-944b-e07fc1f90ae7",
+    _id: "7c9e6679-7425-40de-944b-e07fc1f90ae7",
     title: "Inception",
     genre: "Sci-Fi",
     description:
-      "A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea into a CEO's mind.",
+      "A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an _idea into a CEO's mind.",
     imageUrl:
       "https://m.media-amazon.com/images/M/MV5BZjhkNjM0ZTMtNGM5MC00ZTQ3LTk3YmYtZTkzYzdiNWE0ZTA2XkEyXkFqcGc@._V1_.jpg",
     director: "Christopher Nolan",
@@ -39,7 +41,7 @@ export const movies = [
     category: "Blockbuster",
   },
   {
-    id: "16fd2706-8baf-433b-82eb-8c7fada847da",
+    _id: "16fd2706-8baf-433b-82eb-8c7fada847da",
     title: "The Dark Knight",
     genre: "Action",
     description:
@@ -52,7 +54,7 @@ export const movies = [
     category: "Superhero",
   },
   {
-    id: "886313e1-3b8a-5372-9b90-0c9aee199e5d",
+    _id: "886313e1-3b8a-5372-9b90-0c9aee199e5d",
     title: "Pulp Fiction",
     genre: "Crime",
     description:
@@ -68,10 +70,16 @@ export const movies = [
 export default class Movie {
   constructor(data) {
     Object.assign(this, data);
+
+    this._id = uuid;
   }
 
   static find() {
     return movies.slice();
+  }
+
+  get id() {
+    return this._id;
   }
 
   save() {

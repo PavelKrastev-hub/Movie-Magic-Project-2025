@@ -33,11 +33,11 @@ SoftUni Movie-Magic JS-Project
 - [x] Add routes
 - [ ] Add 404 page
 - [x] Read body data
-- [ ] Create movie
+- [x ] Create movie
   - [x] Add action
-  - [ ] Add service
-  - [ ] add model method for creating movie
-- [ ] Redirect after creation
+  - [x] Add service
+  - [x] add model method for creating movie
+- [x] Redirect after creation
 - [ ] Add unique id for each created movie
 
 ---
