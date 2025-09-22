@@ -54,8 +54,8 @@ SoftUni Movie-Magic JS-Project
 
 ### Search page
 
-- [ ] Show static search page
-- [ ] Render all movies
+- [x] Show static search page
+- [x] Render all movies
 - [ ] Modify search form
 - [ ] Filter movies
   - [ ] By year
