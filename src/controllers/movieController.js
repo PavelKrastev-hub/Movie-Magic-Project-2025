@@ -9,6 +9,7 @@ movieController.get('/create', (req, res) => {
 
 movieController.post('/create', async (req, res) => {
   const movieData = req.body;
+  
   await movieService.create(movieData);
 
   res.redirect('/');
