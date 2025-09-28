@@ -92,10 +92,12 @@ SoftUni Movie-Magic JS-Project
 - [x] Refactor search
 
 ### Add cast 
-- [ ] Add new resources
+- [x] Add new resources
+- [ ] Create Cast controller
+- [ ] Create cast page
 - [ ] Add cast model
 - [ ] Add cast service
-- [ ] Cast controller
+- [ ] Create cast functinallity
 
 ### Attach cast to Movie
 
