@@ -81,10 +81,10 @@ SoftUni Movie-Magic JS-Project
 - [x] Connect to DB
 
 ### Refactor Movies to use mongoose
-- [ ] Add movie model
-  - [ ] Create movie schema
-  - [ ] Create movie model
-
+- [x] Add movie model
+  - [x] Create movie schema
+  - [x] Create movie model
+- [x] Import file movies to database
 - [ ] Add new resources
 
 ### Bonuses
