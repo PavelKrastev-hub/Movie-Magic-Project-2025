@@ -34,7 +34,7 @@ SoftUni Movie-Magic JS-Project
 - [x] Add routes
 - [x] Add 404 page
 - [x] Read body data
-- [x ] Create movie
+- [x] Create movie
   - [x] Add action
   - [x] Add service
   - [x] add model method for creating movie
@@ -87,7 +87,18 @@ SoftUni Movie-Magic JS-Project
 - [x] Import file movies to database
 - [x] Fix own property handlebars problem with lean method;
 - [x] General fix for own propert problem;
+- [x] Refactor details
+- [x] Refactor create
+- [x] Refactor search
 
+### Add cast 
 - [ ] Add new resources
+- [ ] Add cast model
+- [ ] Add cast service
+- [ ] Cast controller
+
+### Attach cast to Movie
+
+### Show cast on details
 
 ### Bonuses
