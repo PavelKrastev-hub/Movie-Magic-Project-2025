@@ -86,6 +86,8 @@ SoftUni Movie-Magic JS-Project
   - [x] Create movie model
 - [x] Import file movies to database
 - [x] Fix own property handlebars problem with lean method;
+- [ ] General fix for own propert problem;
+
 - [ ] Add new resources
 
 ### Bonuses
