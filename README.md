@@ -77,11 +77,13 @@ SoftUni Movie-Magic JS-Project
 ### Workshop 2 - MognoDB Database
 
 ### Setup
-- [ ] Install mongoose `npm i mongoose`
-- [ ] Connect to DB
+- [x] Install mongoose `npm i mongoose`
+- [x] Connect to DB
 
 ### Refactor Movies to use mongoose
 - [ ] Add movie model
+  - [ ] Create movie schema
+  - [ ] Create movie model
 
 - [ ] Add new resources
 
