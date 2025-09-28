@@ -2,8 +2,9 @@
 
 SoftUni Movie-Magic JS-Project
 
-### Development steps
+### Workshop 1 - Express and Templating
 
+### Setup
 - [x] Initialize project
 - [x] Add express server
 - [x] Config debugging
@@ -68,5 +69,18 @@ SoftUni Movie-Magic JS-Project
 ### Bonuses
 
 - [x] Dynamic page title
-- [ ] File persistance
+- [x] File persistance
 - [x] Rating
+
+--- 
+
+### Workshop 2 - MognoDB Database
+
+### Setup
+- [ ] Install mongoose `npm i mongoose`
+- [ ] Connect to DB
+
+### Refactor Movies to use mongoose
+- [ ] Add movie model
+
+- [ ] Add new resources
