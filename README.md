@@ -84,3 +84,5 @@ SoftUni Movie-Magic JS-Project
 - [ ] Add movie model
 
 - [ ] Add new resources
+
+### Bonuses
