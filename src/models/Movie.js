@@ -11,6 +11,6 @@ const movieSchema = new Schema({
    description: String
 });
 
-const Movie = new model('Movie', movieSchema);
+const Movie = model('Movie', movieSchema);
 
 export default Movie;
