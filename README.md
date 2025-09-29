@@ -97,10 +97,14 @@ SoftUni Movie-Magic JS-Project
 - [x] Create cast page
 - [x] Add cast model
 - [x] Add cast service
-- [ ] Create cast functinallity
+- [x] Create cast functinallity
 
 ### Attach cast to Movie
-
+ - [ ] Add attach cast button
+ - [ ] Add attach cast page
+ - [ ] Add relations between cast and movie
+ - [ ] Add attach cast funtionallity
+ 
 ### Show cast on details
 
 ### Bonuses
