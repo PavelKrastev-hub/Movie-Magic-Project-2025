@@ -202,11 +202,6 @@ span {
 .main-cast-card {
   display: flex;
   justify-content: space-evenly;
-  width: 95%;
-  max-width: 1000px;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 2em; /* малко разстояние отдолу за footer */
 }
 
 .cast-card {
@@ -214,12 +209,10 @@ span {
   background-color: #6d6875;
   border-radius: 10%;
   color: white;
-  padding: 20px;
-  box-sizing: border-box;
 }
 
 .cast-info {
-  margin: 20px 0;
+  margin: 20px;
   font-weight: bold;
 }
 
@@ -232,12 +225,12 @@ span {
 }
 
 .card-img img {
-  display: inline-block;
+  display: inline;
   border-radius: 10%;
-  margin: 10px auto;
+  margin-left: 26%;
+  margin-top: 10px;
   width: 150px;
   height: 150px;
-  object-fit: cover;
 }
 
 .PV {

@@ -108,7 +108,8 @@ SoftUni Movie-Magic JS-Project
 
 ### Show cast on details
 - [x] Get movie casts filtered
-- [ ] Show casts on details
+- [x] Show casts on details
+- [ ] Get movie casts using population
 
 ### Bonuses
 - [ ] Filter casts if they are already attached
