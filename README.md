@@ -104,10 +104,10 @@ SoftUni Movie-Magic JS-Project
 - [x] Add attach cast page
 - [x] Show cast list in attach select
 - [x] Add relations between cast and movie
-- [ ] Add attach cast funtionallity
+- [x] Add attach cast funtionallity
 
- 
 ### Show cast on details
+- [ ] Get movie casts filtered
 
 ### Bonuses
 - [ ] Filter casts if they are already attached
