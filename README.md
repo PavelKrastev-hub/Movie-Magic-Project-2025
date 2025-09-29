@@ -105,6 +105,7 @@ SoftUni Movie-Magic JS-Project
 - [ ] Show cast list in attach select
 - [ ] Add relations between cast and movie
 - [ ] Add attach cast funtionallity
+
  
 ### Show cast on details
 
