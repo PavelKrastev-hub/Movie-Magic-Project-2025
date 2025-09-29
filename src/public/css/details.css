@@ -5,13 +5,16 @@
 
 .main_card {
   color: #fff;
-  height: 500px auto;
+  min-height: 500px;
+  height: auto;
   margin: 50px auto;
   display: flex;
-  left: 55%;
   max-width: 1000px;
   background-color: #6d6875;
   box-shadow: 0 0px 81px #5b848a;
+  position: relative;
+  left: 0;
+  right: 0;
 }
 
 #stars {
@@ -21,12 +24,16 @@
 
 .card_left {
   width: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card_datails {
   width: 96%;
   padding: 50px;
   margin-top: -25px;
+  overflow: hidden;
 }
 
 .card_datails h1 {
@@ -35,10 +42,20 @@
   text-align: center;
 }
 
-.card_right img {
-  height: 100%;
+.card_right {
   width: 420px;
-  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card_right img {
+  height: auto;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .card-movie {
@@ -93,7 +110,7 @@
   margin-top: 2em;
 }
 
-.social-btn > .edit-btn,
+.social-btn>.edit-btn,
 .del-btn {
   color: black;
   font-weight: bold;
@@ -142,7 +159,7 @@
   transition: all 0.1s ease-in;
 }
 
-.thumb > img {
+.thumb>img {
   height: 370px;
   width: 100%;
 }
@@ -185,6 +202,11 @@ span {
 .main-cast-card {
   display: flex;
   justify-content: space-evenly;
+  width: 95%;
+  max-width: 1000px;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 2em; /* малко разстояние отдолу за footer */
 }
 
 .cast-card {
@@ -192,10 +214,12 @@ span {
   background-color: #6d6875;
   border-radius: 10%;
   color: white;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .cast-info {
-  margin: 20px;
+  margin: 20px 0;
   font-weight: bold;
 }
 
@@ -208,12 +232,12 @@ span {
 }
 
 .card-img img {
-  display: inline;
+  display: inline-block;
   border-radius: 10%;
-  margin-left: 26%;
-  margin-top: 10px;
+  margin: 10px auto;
   width: 150px;
   height: 150px;
+  object-fit: cover;
 }
 
 .PV {
