@@ -33,5 +33,9 @@ export default {
       // return movie.save();
 
       return Movie.create(movieData);
-   }
+   },
+
+   async attach(movieId, castId) {
+      return Movie.findByIdAndUpdate(movieId, {$push: {casts: castId}});
+   },
 }
