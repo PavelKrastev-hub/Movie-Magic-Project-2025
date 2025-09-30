@@ -116,3 +116,7 @@ SoftUni Movie-Magic JS-Project
 - [ ] Env variables
 - [ ] Name in movie
 - [ ] Add movie views to a folder
+
+---
+### Workshop 3 - Session and Authentication
+- [x] Add new resources

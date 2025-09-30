@@ -51,11 +51,9 @@
 }
 
 .card_right img {
-  height: auto;
-  width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-  display: block;
+  height: 100%;
+  width: 420px;
+  border-radius: 2px;
 }
 
 .card-movie {
@@ -110,7 +108,7 @@
   margin-top: 2em;
 }
 
-.social-btn>.edit-btn,
+.social-btn > .edit-btn,
 .del-btn {
   color: black;
   font-weight: bold;
@@ -159,7 +157,7 @@
   transition: all 0.1s ease-in;
 }
 
-.thumb>img {
+.thumb > img {
   height: 370px;
   width: 100%;
 }
