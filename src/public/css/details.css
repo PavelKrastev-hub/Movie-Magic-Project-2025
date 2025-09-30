@@ -5,16 +5,13 @@
 
 .main_card {
   color: #fff;
-  min-height: 500px;
-  height: auto;
+  height: 500px auto;
   margin: 50px auto;
   display: flex;
+  left: 55%;
   max-width: 1000px;
   background-color: #6d6875;
   box-shadow: 0 0px 81px #5b848a;
-  position: relative;
-  left: 0;
-  right: 0;
 }
 
 #stars {
@@ -24,30 +21,18 @@
 
 .card_left {
   width: 570px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .card_datails {
   width: 96%;
   padding: 50px;
   margin-top: -25px;
-  overflow: hidden;
 }
 
 .card_datails h1 {
   font-size: 30px;
   padding-bottom: 8px;
   text-align: center;
-}
-
-.card_right {
-  width: 420px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
 }
 
 .card_right img {

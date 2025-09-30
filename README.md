@@ -120,3 +120,5 @@ SoftUni Movie-Magic JS-Project
 ---
 ### Workshop 3 - Session and Authentication
 - [x] Add new resources
+- [x] Create user controller
+- [x] Show login and register views
