@@ -129,6 +129,6 @@ SoftUni Movie-Magic JS-Project
 - [x] Add user model
 - [x] Add user service
 - [x] Handle registration (create user in database)
-- [ ] Add password hashing
+- [x] Add password hashing
 
 ### Login
