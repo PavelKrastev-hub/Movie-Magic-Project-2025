@@ -1,4 +1,5 @@
 import { Router } from "express";
+import userService from "../services/userService.js";
 // import bcrypt from "bcrypt";
 
 const authController = Router();
@@ -13,13 +14,12 @@ authController.get('/register', (req, res) => {
 
 });
 
-authController.post('/register', (req, res) => {
-   const { email, password, rePass } = req.body;
+authController.post('/register', async (req, res) => {
+   const userData = req.body;
 
-   console.log(email, password, rePass);
-   res.send('Registered successfully!')
+   await userService.register(userData);
 
-   res.end();
+   res.redirect('/');
 });
 
 export default authController;

@@ -1,9 +1,9 @@
-import { padStart } from "lodash";
 import { Schema, model } from "mongoose";
+import { stringify } from "uuid";
 
 const userSchema = new Schema({
    email: {
-      type: email,
+      type: String,
       required: true
    },
    password: {
