@@ -12,11 +12,11 @@ const userSchema = new Schema({
    },
 });
 
-userSchema.pre('save', async function () {
+userSchema.pre('save', function () {
    // Generate salt
    // const salt = await bcrypt.genSalt(12);
 
-   this.password = await bcrypt.hash(this.password, 13);
+   this.password = bcrypt.hash(this.password, 13);
 });
 
 const User = model('User', userSchema);

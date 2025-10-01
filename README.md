@@ -132,3 +132,9 @@ SoftUni Movie-Magic JS-Project
 - [x] Add password hashing
 
 ### Login
+
+- [x] Add login page
+- [ ] Hnalde login page
+- [x] Validate user
+- [x] Validate password
+- [ ] Create token
