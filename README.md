@@ -119,6 +119,16 @@ SoftUni Movie-Magic JS-Project
 
 ---
 ### Workshop 3 - Session and Authentication
+
+### Initial Setup
 - [x] Add new resources
+
+### Registration
 - [x] Create user controller
-- [x] Show login and register views
+- [x] Add registration page
+- [x] Add user model
+- [ ] Add user service
+- [ ] Handle registration (create user in database)
+- [ ] Add password hashing
+
+### Login
