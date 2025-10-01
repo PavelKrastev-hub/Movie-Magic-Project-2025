@@ -1,5 +1,10 @@
-import User from "../models/User.js"
 import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
+
+import User from "../models/User.js"
+
+const JWT_SECRET = 'asdkjnqwinaskcmakjsdbgbnschabsgx'
+
 
 export default {
    register(userData) {
@@ -21,5 +26,13 @@ export default {
       }
 
       // Create token
+      const payload = {
+         id: user.id,
+         email: user.email
+      };
+
+      const token = jwt.sign(payload, JWT_SECRET, {expiresIn: '2h'});
+
+      return token;
    },
 }

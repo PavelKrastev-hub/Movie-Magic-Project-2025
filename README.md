@@ -134,7 +134,7 @@ SoftUni Movie-Magic JS-Project
 ### Login
 
 - [x] Add login page
-- [ ] Hnalde login page
+- [x] Hnalde login page
 - [x] Validate user
 - [x] Validate password
-- [ ] Create token
+- [x] Create token
