@@ -15,8 +15,6 @@ SoftUni Movie-Magic JS-Project
 - [x] Add layout
 - [x] Render about page
 
----
-
 ### Architecture and dynamic rendering
 
 - [x] Add home cotroller
@@ -25,7 +23,6 @@ SoftUni Movie-Magic JS-Project
 - [x] Render movies on home page
 - [x] Show no movies screen
 
----
 
 ### Create movie
 
@@ -41,7 +38,6 @@ SoftUni Movie-Magic JS-Project
 - [x] Redirect after creation
 - [x] Add unique id for each created movie
 
----
 
 ### Details page
 
@@ -51,7 +47,6 @@ SoftUni Movie-Magic JS-Project
 - [x] Find movie by id from model
 - [x] Render details page with dynamic data
 
----
 
 ### Search page
 
@@ -63,8 +58,6 @@ SoftUni Movie-Magic JS-Project
   - [x] By genre
   - [x] By title
 - [x] Remember search words
-
----
 
 ### Bonuses
 
@@ -138,12 +131,21 @@ SoftUni Movie-Magic JS-Project
 - [x] Validate user
 - [x] Validate password
 - [x] Create token
-- [ ] Return token to client
+- [x] Return token to client
 
 ### Logout
-- [ ] Add logout action
-- [ ] Clear cookie
+- [x] Add logout action
+- [x] Clear cookie
+
+### Dynamic Navigation
 
 ### Authorization
+- [ ] Install cookie-parser
 - [ ] Add auth middleware
 - [ ] Validate user authentication
+- [ ] 
+
+### Bonuses
+- [ ] Automatic login on register
+- [ ] Invalidate token on logout
+- [ ] Refresh token

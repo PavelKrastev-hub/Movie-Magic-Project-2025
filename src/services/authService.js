@@ -2,8 +2,7 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
 import User from "../models/User.js"
-
-const JWT_SECRET = 'asdkjnqwinaskcmakjsdbgbnschabsgx'
+import { JWT_SECRET } from '../config/constants.js';
 
 
 export default {
