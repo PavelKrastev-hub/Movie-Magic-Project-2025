@@ -140,10 +140,10 @@ SoftUni Movie-Magic JS-Project
 ### Dynamic Navigation
 
 ### Authorization
-- [ ] Install cookie-parser
-- [ ] Add auth middleware
+- [x] Install cookie-parser
+- [x] Add auth middleware
 - [ ] Validate user authentication
-- [ ] 
+- [ ] Add route guard
 
 ### Bonuses
 - [ ] Automatic login on register
