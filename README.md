@@ -138,6 +138,8 @@ SoftUni Movie-Magic JS-Project
 - [x] Clear cookie
 
 ### Dynamic Navigation
+- [x] Group navigation by user type (all, authenticated and guest)
+- [x] Add auth info to handlebars context
 
 ### Authorization
 - [x] Install cookie-parser
