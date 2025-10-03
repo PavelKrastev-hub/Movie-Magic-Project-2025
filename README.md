@@ -142,8 +142,9 @@ SoftUni Movie-Magic JS-Project
 ### Authorization
 - [x] Install cookie-parser
 - [x] Add auth middleware
-- [ ] Validate user authentication
-- [ ] Add route guard
+- [x] Validate user authentication
+- [x] Add isAuth route guard
+- [x] Add isGuest route guard
 
 ### Bonuses
 - [ ] Automatic login on register
