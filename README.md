@@ -138,3 +138,12 @@ SoftUni Movie-Magic JS-Project
 - [x] Validate user
 - [x] Validate password
 - [x] Create token
+- [ ] Return token to client
+
+### Logout
+- [ ] Add logout action
+- [ ] Clear cookie
+
+### Authorization
+- [ ] Add auth middleware
+- [ ] Validate user authentication

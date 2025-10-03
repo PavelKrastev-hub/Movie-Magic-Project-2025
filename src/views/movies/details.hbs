@@ -1,95 +1,45 @@
 <section id="details-page">
+    <div class="main_card">
+        <div class="card_left">
+            <div class="card_datails">
+                <h1>{{movie.title}}</h1>
+                <div class="card-movie">
+                    <div class="first-info">
+                        <p class="card-genre">Genre: {{movie.genre}}</p>
+                        <p class="card-director">Director: {{movie.director}}</p>
 
-  <div class="main_card">
-    <div class="card_left">
-      <div class="card_datails">
+                    </div>
+                    <div class="second-info">
+                        <p class="card-year">Year: {{movie.year}}</p>
+                        <p class="card-ranking">Rating: <span id="stars">{{{rating}}}</span></p>
+                    </div>
 
-        <h1>{{movie.title}}</h1>
-        <div class="card-movie">
-          <div class="first-info">
-            <p class="card-genre">Genre: {{movie.genre}}</p>
-            <p class="card-director">Director: {{movie.director}}</p>
-          </div>
-          <div class="second-info">
-            <p class="card-year">Year:{{movie.year}}</p>
-            <p class="card-ranking"> Rating: <span id="stars">{{{rating}}}</span></p>
-          </div>
+                </div>
 
+                <p class="disc">Description: {{movie.description}}</p>
+                <p class="card-category">Category: {{movie.category}}</p>
+
+                <a href="/movies/{{movie.id}}/attach" class="details">Attach</a>
+            </div>
         </div>
-
-        <p class="disc"> Description: {{movie.description}}</p>
-        <p class="card-category">Category: {{movie.category}}</p>
-
-        <a href="/movies/{{movie.id}}/attach" class="details">Attach</a>
-      </div>
-      <div class="details-btn">
-        <button id="edit-button">Edit</button>
-        <button id="delete-button">Delete</button>
-      </div>
+        <div class="card_right">
+            <img src="{{movie.imageUrl}}" alt="{{movie.title}}">
+        </div>
     </div>
-    <div class="card_right">
-      <img src="{{movie.imageUrl}}" alt="{{title}}" />
-    </div>
-  </div>
 
-  <div class="main-cast-card">
-    {{#each movie.casts}}
-    <div class="cast-card">
-      <div class="card-img">
-        <img src="{{imageUrl}}" alt="{{name}}">
-      </div>
-      <div class="cast-info">
-        <h1>{{name}}</h1>
-        <h3>Age: {{age}}</h3>
-        <h3>Born: {{born}}</h3>
-        <h3>Name in Movie: n\a</h3>
-      </div>
+    <div class="main-cast-card">
+        {{#each movie.casts}}
+        <div class="cast-card">
+            <div class="card-img">
+                <img src="{{imageUrl}}" alt="{{name}}">
+            </div>
+            <div class="cast-info">
+                <h1>{{name}}</h1>
+                <h3>Age: {{age}}</h3>
+                <h3>Born: {{born}}</h3>
+                <h3>Name in Movie: n\a</h3>
+            </div>
+        </div>
+        {{/each}}
     </div>
-    {{/each }}
-  </div>
 </section>
-
-{{!-- <section id="details-page">
-
-  <div class="main_card">
-    <div class="card_left">
-      <div class="card_datails">
-
-        <h1>The Little Mermaid</h1>
-        <div class="card-movie">
-          <div class="first-info">
-            <p class="card-genre">Genre: Fantasy</p>
-            <p class="card-director">Directror: Rob Marshall</p>
-          </div>
-          <div class="second-info">
-            <p class="card-year">Year: 2023</p>
-            <p class="card-ranking">Rating: <span id="stars">★ ★ ★
-                ★</span></p>
-          </div>
-
-        </div>
-
-        <p class="disc">Description: The youngest of King Triton's daughters, Ariel is a beautiful
-          and spirited young mermaid with a thirst for adventure. Longing to find out more about
-          the world beyond the sea, Ariel visits the surface and falls for the dashing Prince
-          Eric. Following her heart, she makes a deal with the evil sea witch, Ursula, to
-          experience life on land.</p>
-        <p class="card-category">Category: Movie</p>
-      </div>
-      <div class="details-btn">
-        <button id="edit-button">Edit</button>
-        <button id="delete-button">Delete</button>
-      </div>
-    </div>
-    <div class="card_right">
-      <img src="./static/img/the-little-mermaid.jpg" alt="image">
-    </div>
-  </div>
-
-  <div class="main-cast-card">
-    <div class="no-cast">
-      <p>There are no casts added yet...</p>
-    </div>
-  </div>
-
-</section> --}}
