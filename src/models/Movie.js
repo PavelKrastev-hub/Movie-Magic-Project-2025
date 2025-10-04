@@ -1,4 +1,5 @@
 import { Schema, Types, model } from "mongoose";
+import User from "./User.js";
 
 const movieSchema = new Schema({
    title: String,
@@ -13,6 +14,10 @@ const movieSchema = new Schema({
       type: Types.ObjectId,
       ref: 'Cast'
    }],
+   creator: {
+      type: Types.ObjectId,
+      ref: User
+   }
 });
 
 const Movie = model('Movie', movieSchema);

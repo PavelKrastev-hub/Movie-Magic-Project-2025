@@ -30,13 +30,12 @@ export default {
       return this.getOne(movieId).populate('casts');
    },
 
-   create(movieData) {
-      movieData.rating = Number(movieData.rating);
-
-      // const movie = new Movie(movieData);
-      // return movie.save();
-
-      return Movie.create(movieData);
+   create(movieData, creatorId) {
+      return Movie.create({
+         ...movieData,
+         rating: Number(movieData.rating),
+         creator: creatorId,
+      });
    },
 
    async attach(movieId, castId) {
