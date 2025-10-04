@@ -42,9 +42,6 @@ movieController.get('/:movieId/attach', async (req, res) => {
   const movie = await movieService.getOne(movieId);
   const casts = await castService.getAll({ excludes: movie.casts });
 
-  console.log(casts);
-
-
   res.render('casts/attach', { movie, casts });
 });
 
@@ -69,9 +66,10 @@ movieController.get('/:movieId/delete', isAuth, async (req, res) => {
   res.redirect('/');
 });
 
-movieController.get('/:movieId/edit,', (req, res) => {
-  const movieId = req.params.movieId; 
+movieController.get('/:movieId/edit', async (req, res) => {
+  const movieId = req.params.movieId;
 
-  res.render('/movies/edit');
+  res.render('movies/edit');
 });
+
 export default movieController;
