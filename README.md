@@ -156,6 +156,7 @@ SoftUni Movie-Magic JS-Project
 
 ### Delete movies
 - [x] Add delete action
+- [x] Add creator validation
 
 ### Bonuses
 - [ ] Automatic login on register
