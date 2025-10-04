@@ -158,6 +158,10 @@ SoftUni Movie-Magic JS-Project
 - [x] Add delete action
 - [x] Add creator validation
 
+### Edit movie
+- [x] Add edit page
+- [ ] Add dynamic data to edit page
+
 ### Bonuses
 - [ ] Automatic login on register
 - [ ] Invalidate token on logout
