@@ -21,9 +21,6 @@ movieController.get('/:movieId/details', async (req, res) => {
   const movieId = req.params.movieId;
   const movie = await movieService.getOneDetailed(movieId);
 
-  // const movieCasts = await castService.getAll({includes: movie.casts});
-
-  // Prepare view data
   const ratingViewData = '&#x2605;'.repeat(Math.floor(movie.rating));
 
   res.render('movies/details', { movie, rating: ratingViewData, pageTitle: 'Movie Details', });

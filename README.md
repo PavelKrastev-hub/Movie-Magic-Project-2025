@@ -148,6 +148,10 @@ SoftUni Movie-Magic JS-Project
 - [x] Add isAuth route guard
 - [x] Add isGuest route guard
 
+### Show creator control buttons
+- [x] Add edit and delete buttons on details page
+- [ ] Show buttons only for creators
+
 ### Bonuses
 - [ ] Automatic login on register
 - [ ] Invalidate token on logout
