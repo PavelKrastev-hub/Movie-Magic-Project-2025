@@ -166,3 +166,4 @@ SoftUni Movie-Magic JS-Project
 - [ ] Automatic login on register
 - [ ] Invalidate token on logout
 - [ ] Refresh token
+- [ ] Edit categories
