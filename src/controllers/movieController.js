@@ -71,7 +71,9 @@ movieController.get('/:movieId/edit', async (req, res) => {
 
   const movie = await movieService.getOne(movieId);
 
-  res.render('movies/edit', { movie });
+  const categoriesViewData = getMovieCategoryViewData(movie.category);
+
+  res.render('movies/edit', { movie, categories: categoriesViewData });
 });
 
 movieController.post('/:movieId/edit', async (req, res) => {
@@ -82,5 +84,19 @@ movieController.post('/:movieId/edit', async (req, res) => {
 
   res.redirect(`/movies/${movieId}/details`);
 });
+
+function getMovieCategoryViewData(selectedCategory) {
+  const categories = [
+    { value: 'tv-show', label: 'TV Show' },
+    { value: 'animation', label: 'Animation' },
+    { value: 'movie', label: 'Movie' },
+    { value: 'documentary', label: 'Documentary' },
+    { value: 'short-film', label: 'Short Film' },
+  ];
+
+  const viewData = categories.map(category => ({ ...category, selected: selectedCategory === category.value ? 'selected' : ''}));
+
+  return viewData;
+}
 
 export default movieController;

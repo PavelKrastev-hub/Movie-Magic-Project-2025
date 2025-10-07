@@ -161,10 +161,10 @@ SoftUni Movie-Magic JS-Project
 ### Edit movie
 - [x] Add edit page
 - [x] Add dynamic data to edit page
-- [ ] Handle edit movie
+- [x] Handle edit movie
 
 ### Bonuses
 - [ ] Automatic login on register
 - [ ] Invalidate token on logout
 - [ ] Refresh token
-- [ ] Edit categories
+- [x] Edit categories
