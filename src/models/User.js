@@ -6,17 +6,18 @@ const userSchema = new Schema({
       type: String,
       required: [true, 'Email is required!'],
       unique: [true, 'Email should be unique!'],
+      match: [/[a-zA-Z0-9]+\.[a-zA-Z0-9]+$/],
+      minLength: [10, 'Email should be at least 10 characters long!'],
    },
    password: {
       type: String,
-      required: true
+      required: [true, 'Password is required!'],
+      minLength: [6, 'Password must be at least 6 characters long!'], 
+      match: [/^[a-zA-Z0-9]+$/],
    },
 });
 
 userSchema.pre('save', async function () {
-   // Generate salt
-   // const salt = await bcrypt.genSalt(12);
-
    this.password = await bcrypt.hash(this.password, 13);
 });
 
