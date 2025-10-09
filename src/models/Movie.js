@@ -1,6 +1,5 @@
 import { Schema, Types, model } from "mongoose";
 import User from "./User.js";
-import { min } from "lodash";
 
 const movieSchema = new Schema({
    title: {

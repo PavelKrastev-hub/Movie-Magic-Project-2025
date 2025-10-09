@@ -169,7 +169,13 @@ SoftUni Movie-Magic JS-Project
 - [ ] Refresh token
 - [x] Edit categories
 
+---
+
 ### Workshop 4 - Validation and Error Handling
 - [x] Validate movie,
 - [ ] Validate cast,
 - [ ] Validate user,
+
+### Bonuses 
+- [ ] Dynamic year check
+- [ ] Character name
