@@ -181,7 +181,8 @@ SoftUni Movie-Magic JS-Project
 - [x] Validate user
 
 ### Error Handling
-- [ ] Add static error notification container
+- [x] Add static error notification container
+- [ ] User register error handling
 
 ### Bonuses 
 - [ ] Dynamic year check
