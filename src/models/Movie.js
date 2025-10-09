@@ -4,7 +4,7 @@ import User from "./User.js";
 const movieSchema = new Schema({
    title: {
       type: String,
-      reqired: [true, 'Movie title is required!'],
+      required: [true, 'Movie title is required!'],
       minLength: [5, 'Title is too short!'],
       match: [/^[A-Za-z0-9 ]+$/, 'Title has some invalid charactors!'],
    },
