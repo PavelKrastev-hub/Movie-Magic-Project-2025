@@ -172,9 +172,16 @@ SoftUni Movie-Magic JS-Project
 ---
 
 ### Workshop 4 - Validation and Error Handling
-- [x] Validate movie,
-- [ ] Validate cast,
-- [ ] Validate user,
+
+- [x] Add resources
+
+### Validations
+- [x] Validate movie
+- [x] Validate cast
+- [x] Validate user
+
+### Error Handling
+- [ ] Add static error notification container
 
 ### Bonuses 
 - [ ] Dynamic year check
