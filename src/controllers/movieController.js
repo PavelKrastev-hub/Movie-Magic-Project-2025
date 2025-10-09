@@ -7,21 +7,29 @@ import { getErrorMessage } from '../utils/errorUtils.js';
 const movieController = Router();
 
 movieController.get('/create', isAuth, (req, res) => {
-  res.render('movies/create', { pageTitle: 'Create Movie' });
+  res.render('movies/create', {
+    pageTitle: 'Create Movie',
+    categories: getMovieCategoryViewData(),
+  });
 });
+
 
 movieController.post('/create', isAuth, async (req, res) => {
   const movieData = req.body;
   const creatorId = req.user.id;
+
+  console.log('Movie Data:', movieData);
 
   try {
     await movieService.create(movieData, creatorId);
 
     res.redirect('/');
   } catch (error) {
-    const errorMessage = getErrorMessage(error);
-
-    res.status(400).render('movies/create', { error: errorMessage, movie: movieData });
+    res.status(400).render('movies/create', {
+      error: getErrorMessage(error),
+      movie: movieData,
+      categories: getMovieCategoryViewData(movieData.category),
+    });
   }
 });
 
