@@ -168,3 +168,8 @@ SoftUni Movie-Magic JS-Project
 - [ ] Invalidate token on logout
 - [ ] Refresh token
 - [x] Edit categories
+
+### Workshop 4 - Validation and Error Handling
+- [x] Validate movie,
+- [ ] Validate cast,
+- [ ] Validate user,
