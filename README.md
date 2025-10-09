@@ -184,6 +184,8 @@ SoftUni Movie-Magic JS-Project
 - [x] Add static error notification container
 - [x] User register error handling
 - [x] Render error container conditionally
+- [x] Extract get error message
+- [x] User login error handling
 
 ### Bonuses 
 - [ ] Dynamic year check
