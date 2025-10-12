@@ -194,7 +194,7 @@ SoftUni Movie-Magic JS-Project
 - [x] Fix movie category on edit
 
 ### Bonuses 
-- [ ] Guard edit from non creator
+- [x] Guard edit from non creator
 - [ ] Dynamic year check
 - [ ] Character name
 - [ ] Add more password validations
