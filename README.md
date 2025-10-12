@@ -190,6 +190,8 @@ SoftUni Movie-Magic JS-Project
 - [x] Retain movie category after error
 - [x] Create cast error handling
 - [x] Add details page error handling
+- [x] Error hanling on movie edit page
+- [x] Fix movie category on edit
 
 ### Bonuses 
 - [ ] Guard edit from non creator
