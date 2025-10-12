@@ -196,3 +196,4 @@ SoftUni Movie-Magic JS-Project
 - [ ] Dynamic year check
 - [ ] Character name
 - [ ] Add more password validations
+- [ ] Redirect with message
