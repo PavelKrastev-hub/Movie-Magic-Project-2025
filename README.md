@@ -187,7 +187,8 @@ SoftUni Movie-Magic JS-Project
 - [x] Extract get error message
 - [x] User login error handling
 - [x] Create movie error handling
-- [ ] Retain movie category after error
+- [x] Retain movie category after error
+- [x] Create cast error handling
 
 ### Bonuses 
 - [ ] Dynamic year check

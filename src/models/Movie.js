@@ -24,7 +24,7 @@ const movieSchema = new Schema({
    },
    director: {
       type: String,
-      reqired: [true, 'Movie director is required!'],
+      required: [true, 'Movie director is required!'],
       minLength: [5, 'Movie director is too short!'],
       match: [/^[A-Za-z0-9 ]+$/, 'Director has some invalid charactors!'],
    },
@@ -41,7 +41,7 @@ const movieSchema = new Schema({
    },
    rating: {
       type: Number,
-      reqired: [true, 'Rating is required!'],
+      required: [true, 'Rating is required!'],
       min: [1, 'Rating cannot be less than 1!'],
       max: [10, 'Movie rating cannot be more than 10!'],
    },
