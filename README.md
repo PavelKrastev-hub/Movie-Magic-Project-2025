@@ -195,7 +195,7 @@ SoftUni Movie-Magic JS-Project
 
 ### Bonuses 
 - [x] Guard edit from non creator
+- [ ] Redirect with message
 - [ ] Dynamic year check
 - [ ] Character name
 - [ ] Add more password validations
-- [ ] Redirect with message

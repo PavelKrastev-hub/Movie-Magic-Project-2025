@@ -1,11 +1,13 @@
 import express from "express";
 import handlebars from "express-handlebars";
 import mongoose from "mongoose";
+import expressSession from 'express-session';
 
 import routes from "./routes.js";
 import cookieParser from "cookie-parser";
 import authMiddleware from "./middlewares/authMiddleware.js";
 import pageHelpers from "./helpers/pageHelpers.js";
+import { tempDataMiddleware } from "./middlewares/tempDataMiddleware.js";
 
 const app = express();
 
@@ -48,6 +50,17 @@ app.use(cookieParser());
 
 //Use auth middleware
 app.use(authMiddleware);
+
+// Express Session
+app.use(expressSession({
+  secret: 'ljasdfuynsdfijuwieybfosdijnfouasyehbfoasdhfbfnuaysdhbfiuhsabdcygweouhqbouwyebasjhnurgbf',
+  resave: false,
+  saveUninitialized: false,
+  cookie: { secure: false },
+}));
+
+// Add tempdata Middleware
+app.use(tempDataMiddleware);
 
 //Routes
 app.use(routes);

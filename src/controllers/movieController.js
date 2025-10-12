@@ -50,9 +50,11 @@ movieController.get('/:movieId/details', async (req, res) => {
     // res.redirect('/404');
 
     // Render 404 with message(URL not modified)
-    res.render('404', { error: 'Movie not found!' });
+    // res.render('404', { error: 'Movie not found!' });
 
     // Redirect with message (URL modified)
+    req.tempData = { error: 'Movie not found!' };
+    res.redirect('/404');
   }
 });
 
