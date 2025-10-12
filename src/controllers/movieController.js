@@ -103,7 +103,6 @@ movieController.get('/:movieId/edit', isAuth, isMovieCreator, async (req, res) =
   } catch (error) {
     res.render('404', { error: 'Movie not found!' });
   }
-
 });
 
 movieController.post('/:movieId/edit', isAuth, isMovieCreator, async (req, res) => {
